@@ -13,7 +13,7 @@
       module.exports = factory(require("jquery"), require("underscore"), require("backbone"));
   } else if (typeof define === 'function' && define.amd) {
       // Define as AMD:
-      define(["jquery", "underscore", "backbone"], factory);
+      define('backbone-nested', ["jquery", "underscore", "backbone"], factory);
   } else {
       // Just run it:
       factory(root.$, root._, root.Backbone);
